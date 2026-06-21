@@ -81,7 +81,7 @@
   <footer>
     <Logo compact={true} />
     <p>© 2026 Noodlr Studio Ltd.</p>
-    <a href="mailto:hello@noodlr.xyz">hello@noodlr.xyz</a>
+    <a href="mailto:noodlr.music@gmail.com">Get in touch</a>
   </footer>
 </div>
 
