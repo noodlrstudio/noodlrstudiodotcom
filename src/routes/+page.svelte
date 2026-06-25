@@ -68,12 +68,12 @@
         <span class="kicker">NOODLR STUDIO LTD · BRISTOL</span>
         <h2>Built with love in Bristol</h2>
       </div>
-      <p>Musicians, mates + long-time collaborators designing a more thoughtful approach to music production.</p>
+      <p>Musicians, mates + long-time collaborators designing a more thoughtful approach to music making.</p>
     </section>
 
     <section class="finale">
       <span>PRIVATE BETA</span>
-      <h2>Play more.<br/>Perform more.<br/><i>Share more.</i></h2>
+      <h2>Play more.<br/>Create more.<br/><i>Share more.</i></h2>
       <button class="join inverse" on:click={() => open=true}>Join the crew <span>↗</span></button>
     </section>
   </main>
