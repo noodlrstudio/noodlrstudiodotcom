@@ -27,7 +27,7 @@
   <main>
     <section class="hero">
       <div class="eyebrow"><span></span> Creative boards for musicians</div>
-      <h1>Music lives<br/><em>outside</em> the DAW.</h1>
+      <h1>Music that lives<br/><em>outside</em> the DAW.</h1>
       <p class="lede">A place to <b>play</b> before production.<br/>A place to <b>plan</b> what happens next.</p>
       <button class="join hero-cta" on:click={() => open=true}>Join the crew <span>↗</span></button>
       <div class="scroll">SCROLL TO NOODLE <span>↓</span></div>
@@ -39,7 +39,7 @@
     </section>
 
     <section class="statement">
-      <p>DAWs are brilliant at producing tracks.</p>
+      <p>DAWs are brilliant.</p>
       <h2>We’re building the missing space around them.</h2>
     </section>
 
@@ -48,7 +48,7 @@
       <div class="mode-copy">
         <div class="orbital" aria-hidden="true"><i></i><i></i><i></i></div>
         <h2>Catch the spark<br/>before it disappears.</h2>
-        <p>Loops. Voice notes. MIDI noodles. References. Half-formed thoughts shared with people you trust.</p>
+        <p>Loops. Voice notes. Whistles. MIDI noodles.<br>Capture the Genius + Share with the people you trust.</p>
         <span class="micro">NO TIMELINE REQUIRED</span>
       </div>
     </section>
@@ -57,8 +57,8 @@
       <div class="mode-label"><b>02</b><span>PLAN</span></div>
       <div class="mode-copy">
         <div class="plan-object" aria-hidden="true"><span>release</span><span>show</span><span>share</span></div>
-        <h2>Get the music<br/>out into the world.</h2>
-        <p>Shape the release. Find the room. Gather the assets. Keep artists and crew moving together.</p>
+        <h2>Get your music<br/>out into the world.</h2>
+        <p>Shape the release. Find the room. Gather the assets. Keep artists + crew moving together.</p>
         <span class="micro">MORE CLIPPY, LESS CORPORATE</span>
       </div>
     </section>
@@ -68,7 +68,7 @@
         <span class="kicker">NOODLR STUDIO LTD · BRISTOL</span>
         <h2>Built with love in Bristol</h2>
       </div>
-      <p>Ant + Chris: Musicians, mates + long-time collaborators designing a more thoughtful approach to music production.</p>
+      <p>Musicians, mates + long-time collaborators designing a more thoughtful approach to music production.</p>
     </section>
 
     <section class="finale">
