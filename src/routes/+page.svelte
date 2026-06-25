@@ -6,9 +6,9 @@
 </script>
 
 <svelte:head>
-  <title>Noodlr Studio — Play before. Plan after.</title>
+  <title>Noodlr Studio — Play before. Plan after. Make more music together.</title>
   <meta name="description" content="Noodlr is a creative board for musicians — a playful place for ideas before the DAW, and a practical place for everything that comes after." />
-  <meta property="og:title" content="Noodlr Studio — Outside the DAW" />
+  <meta property="og:title" content="Noodlr Studio — Music that lives outside the DAW" />
   <meta property="og:description" content="Play before. Plan after. Make more music together." />
 </svelte:head>
 
