@@ -26,9 +26,9 @@
 
   <main>
     <section class="hero">
-      <div class="eyebrow"><span></span> Creative boards for musicians</div>
+      <div class="eyebrow"><span></span>Your Infinite Music Space: Play > Create > Share.</div>
       <h1>Music that lives<br/><em>outside</em> the DAW.</h1>
-      <p class="lede">A place to <b>play</b> before production.<br/>A place to <b>plan</b> what happens next.</p>
+      <p class="lede">A space to <b>play</b> before production.<br/>A space to <b>plan</b> what happens next.</p>
       <button class="join hero-cta" on:click={() => open=true}>Join the crew <span>↗</span></button>
       <div class="scroll">SCROLL TO NOODLE <span>↓</span></div>
     </section>
