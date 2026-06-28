@@ -48,7 +48,7 @@
       <div class="mode-copy">
         <div class="orbital" aria-hidden="true"><i></i><i></i><i></i></div>
         <h2>Catch the spark<br/>before it disappears.</h2>
-        <p>Loops. Voice notes. Whistles. MIDI noodles.<br>Capture the Genius + Share with the people you trust.</p>
+        <p>Loops. Voice notes. Whistles. MIDI noodles. Demos.<br>Capture the Genius + Share with the people you trust.</p>
         <span class="micro">NO TIMELINE REQUIRED</span>
       </div>
     </section>
