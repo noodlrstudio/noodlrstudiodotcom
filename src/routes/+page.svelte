@@ -6,6 +6,7 @@
   import PlanRoom from '$lib/board/PlanRoom.svelte';
   import CaptureRoom from '$lib/board/CaptureRoom.svelte';
   import BetaForm from '$lib/BetaForm.svelte';
+  import Manifesto from '$lib/Manifesto.svelte';
   import { audioIcon, midiIcon } from '$lib/board/icons.js';
 
   const testflight = 'https://testflight.apple.com/join/8TDpgyAt';
@@ -17,12 +18,14 @@
     { id: 'plan', name: 'Plan', colour: '#1f6f8b' }
   ];
   let room = 'play';
+  /** @type {Manifesto} */
+  let manifesto;
 </script>
 
 <svelte:head>
-  <title>Noodlr Studio · Spaces outside the DAW</title>
+  <title>Noodlr Studio · A musical space to Play &amp; Plan</title>
   <meta name="description" content="Noodlr is a creative board for musicians: play before production, plan what comes next, and bring your web plugins along. Join the beta." />
-  <meta property="og:title" content="Noodlr · Spaces outside the DAW" />
+  <meta property="og:title" content="Noodlr · A musical space to Play &amp; Plan" />
   <meta property="og:description" content="A board for everything around the DAW. Play before. Plan after. Make more music together." />
 </svelte:head>
 
@@ -30,7 +33,7 @@
   <div class="inner">
     <Logo />
     <nav class="steps" aria-label="Sections">
-      <a href="#input">Input</a><a href="#play">Play</a><a href="#aux">Plugins</a><a href="#daw">DAW</a><a href="#plan">Plan</a><a href="#output">Output</a><a href="#adc">ADC</a>
+      <a href="#input">Input</a><a href="#play">Play</a><a href="#aux">Plugins</a><a href="#daw">DAW</a><a href="#plan">Plan</a><a href="#values">Values</a><a href="#adc">ADC</a>
     </nav>
     <a class="btn line hide-sm" href={testflight} target="_blank" rel="noopener">TestFlight</a>
     <a class="btn ink" href="#join">Beta access</a>
@@ -40,8 +43,8 @@
 <main id="top">
   <section class="hero wrap">
     <div class="inner">
-      <span class="k"><b>ADC 2026</b> Noodlr Studio · Spaces outside the DAW</span>
-      <h1>Music lives either side of <span>the DAW.</span></h1>
+      <span class="k slug"><b>noodlr studio</b> your space to play + plan music.</span>
+      <h1>A musical space to <span class="w-play">Play</span> &amp; <span class="w-plan">Plan</span></h1>
       <div class="hero-row">
         <p>Before production there's play: hums, loops, jams. After it there's planning: the release, the artwork, the gig. Noodlr gives both a proper home.</p>
         <div class="ctas">
@@ -184,9 +187,9 @@
         <div class="boxed"><PlanRoom theme="tour" title="Release + live show" /></div>
       </section>
 
-      <section class="stage" id="output">
+      <section class="stage" id="values">
         <span class="jack">{@html audioIcon}</span>
-        <span class="k">Output</span>
+        <span class="k">Values</span>
         <h2 class="wide">Songs, shows, records, or something nobody has named yet.</h2>
         <div class="manifesto">
           <p>Unfinished ideas have value.<small>We believe</small></p>
@@ -194,6 +197,7 @@
           <p>Serious music can come from playful tools.<small>We believe</small></p>
           <p>Creative tech should invite more people in.<small>We believe</small></p>
         </div>
+        <button class="btn ink read" on:click={() => manifesto.open()}>Read our manifesto <span aria-hidden="true">↗</span></button>
       </section>
     </div>
   </div>
@@ -239,12 +243,14 @@
 <footer class="wrap">
   <div class="inner">
     <span>© 2026 Noodlr Studio Ltd · Built with love in Bristol</span>
-    <a href="mailto:noodlr.music@gmail.com">Get in touch</a>
+    <span class="links"><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:noodlr.music@gmail.com">Get in touch</a></span>
   </div>
 </footer>
 
+<Manifesto bind:this={manifesto} />
+
 <style>
-  /* Signal chain: one cable runs down the page, Input → Play → DAW → Plan → Output. */
+  /* Signal chain: one cable runs down the page, Input → Play → DAW → Plan → Values. */
   :global(:root) {
     --cream: #eee4d0; --cream-2: #e4d8c0; --ink: #1b1a17; --soft: #5f574b; --coral: #ff8652; --green: #00704f; --mint: #00d19b;
     --display: 'Unbounded', 'Avenir Next', sans-serif; --body: 'Figtree', 'Avenir Next', 'Segoe UI', sans-serif; --mono: 'IBM Plex Mono', 'SF Mono', Menlo, monospace;
@@ -280,8 +286,11 @@
   .hero { padding-block: clamp(30px, 5vw, 64px) 30px; }
   .hero .k { color: var(--soft); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
   .hero .k b { background: var(--ink); color: var(--cream); padding: 6px 9px; border-radius: 12px; font-weight: 600; }
-  h1 { font: 800 clamp(2.6rem, 7.4vw, 7.2rem)/.95 var(--display); letter-spacing: -.045em; margin: 18px 0 0; text-wrap: balance; max-width: 14ch; }
-  h1 span { color: var(--coral); }
+  .hero .slug { text-transform: none; letter-spacing: .02em; font-size: 13px; }
+  h1 { font: 800 clamp(2.6rem, 7.4vw, 7.2rem)/1.02 var(--display); letter-spacing: -.045em; margin: 18px 0 0; text-wrap: balance; max-width: 15ch; }
+  /* Play is a mint node-like sticker; Plan is coral with a hand-drawn underline. */
+  .w-play { display: inline-block; background: var(--mint); padding: 0 .18em .06em; border-radius: .22em; transform: rotate(-3deg); box-shadow: .06em .06em 0 var(--ink); }
+  .w-plan { color: var(--coral); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='none'%3E%3Cpath d='M3 13 C 40 4, 70 18, 105 9 S 170 4, 197 12' fill='none' stroke='%231b1a17' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") bottom / 100% .22em no-repeat; padding-bottom: .1em; }
   .hero-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-top: 22px; }
   .hero-row p { max-width: 46ch; margin: 0; font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: var(--soft); }
   .ctas { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -338,6 +347,7 @@
   .plan-node :global(.pw-banner) { min-height: 6rem; }
   .manifesto { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 40px; }
   .manifesto p { margin: 0; padding: 20px; border-radius: 20px; background: var(--ink); color: var(--cream); font: 600 1.05rem/1.3 var(--body); min-height: 140px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+  .read { margin-top: 28px; cursor: pointer; }
   .manifesto small { font: 600 11px/1 var(--mono); color: var(--coral); letter-spacing: .08em; text-transform: uppercase; }
   @media (max-width: 960px) { .manifesto { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 520px) { .manifesto { grid-template-columns: 1fr; } .manifesto p { min-height: 0; } .stage { padding-left: 40px; } }
@@ -366,5 +376,7 @@
 
   footer { padding-block: 30px; font: 500 13px/1.5 var(--mono); color: var(--soft); }
   footer .inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  footer .links { display: flex; gap: 18px; }
+  footer button { border: 0; background: none; padding: 0; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
   @media (prefers-reduced-motion: reduce) { :global(html) { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
