@@ -11,6 +11,7 @@
 
   const testflight = 'https://testflight.apple.com/join/8TDpgyAt';
   const adc = 'https://conference.audio.dev/session/2026/spaces-outside-the-daw/';
+  const play = 'https://noodlr.xyz';
 
   const rooms = [
     { id: 'capture', name: 'Capture', colour: '#ff5b4d' },
@@ -35,8 +36,9 @@
     <nav class="steps" aria-label="Sections">
       <a href="#input">Input</a><a href="#play">Play</a><a href="#aux">Plugins</a><a href="#daw">DAW</a><a href="#plan">Plan</a><a href="#values">Values</a><a href="#adc">ADC</a>
     </nav>
-    <a class="btn line hide-sm" href={testflight} target="_blank" rel="noopener">TestFlight</a>
+    <a class="btn mint" href={play} target="_blank" rel="noopener">Just Play</a>
     <a class="btn ink" href="#join">Beta access</a>
+    <a class="btn line hide-sm" href={testflight} target="_blank" rel="noopener">TestFlight</a>
   </div>
 </header>
 
@@ -48,6 +50,7 @@
       <div class="hero-row">
         <p>Before production there's play: hums, loops, jams. After it there's planning: the release, the artwork, the gig. Noodlr gives both a proper home.</p>
         <div class="ctas">
+          <a class="btn mint" href={play} target="_blank" rel="noopener">Just Play <span aria-hidden="true">↗</span></a>
           <a class="btn coral" href="#join">Sign up for beta access</a>
           <a class="btn line" href={testflight} target="_blank" rel="noopener">iOS &amp; Mac TestFlight</a>
         </div>
@@ -273,14 +276,15 @@
   .btn.ink { background: var(--ink); color: var(--cream); }
   .btn.line { background: transparent; color: var(--ink); }
   .btn.coral { background: var(--coral); border-color: var(--coral); color: var(--ink); }
+  .btn.mint { background: var(--mint); color: var(--ink); }
 
   header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--cream) 90%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
   header .inner { height: 72px; display: flex; align-items: center; gap: 16px; max-width: none; }
   .steps { display: flex; gap: 4px; margin-left: auto; font: 600 11px/1 var(--mono); }
   .steps a { padding: 9px 11px; border-radius: 16px; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; }
   .steps a:hover { background: var(--cream-2); }
-  @media (max-width: 1060px) { .steps { display: none; } header .inner { justify-content: space-between; } }
-  @media (max-width: 520px) { .hide-sm { display: none; } header .btn { height: 40px; padding: 0 16px; font-size: 14px; } }
+  @media (max-width: 1060px) { .steps { display: none; } header .inner > :global(:first-child) { margin-right: auto; } }
+  @media (max-width: 520px) { .hide-sm { display: none; } header .inner { gap: 10px; } header .btn { height: 40px; padding: 0 16px; font-size: 14px; } }
 
   /* hero */
   .hero { padding-block: clamp(30px, 5vw, 64px) 30px; }
