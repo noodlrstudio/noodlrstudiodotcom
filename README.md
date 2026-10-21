@@ -1,6 +1,6 @@
-# Noodlr Studio teaser site
+# Noodlr Studio site
 
-A static SvelteKit site for Noodlr Studio Ltd, designed for GitHub Pages.
+A static SvelteKit site for Noodlr Studio Ltd and Noodlr Board, designed for GitHub Pages.
 
 ## Run locally
 
@@ -17,11 +17,18 @@ npm run dev
 
 The Svelte config automatically adds the repository-name base path for project pages. Repositories named `username.github.io` use `/`.
 
-## Join the Crew form
+## Beta signup form
 
-The form currently posts to FormSubmit using `noodlr.music@gmail.com`. On the first submission, FormSubmit emails an activation link to that address. Activate it before sharing the site publicly.
+`src/lib/BetaForm.svelte` posts to Formspree (form `xrpewozr`). It works in two layers:
 
-For production, consider swapping the form action for Buttondown, Loops, Mailchimp, ConvertKit or a small Supabase Edge Function. Also add a privacy-policy link before collecting a larger mailing list.
+- **Without JavaScript** the form is a plain HTML `POST` to `https://formspree.io/f/xrpewozr`, so signups still arrive.
+- **With JavaScript** `@formspree/ajax` takes over in `onMount`: it submits in the background, disables the button while sending, shows field errors next to the inputs, and swaps the fields for a success message.
+
+The form sends `name`, `email` and `role`, plus Formspree's `_subject` (email subject line) and `_gotcha` (honeypot spam trap). Manage submissions, notification emails and spam settings in the Formspree dashboard. Add a privacy-policy link before collecting a larger mailing list.
+
+## Board previews
+
+The node previews on the homepage are Svelte recreations of Noodlr Board nodes, in `src/lib/board/`. Colours, ports and cable styling mirror the board app's own tokens. Edit `Node.svelte` to change a node, and `+page.svelte` to rearrange a board.
 
 ## Things to customise
 
