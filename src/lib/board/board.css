@@ -47,7 +47,9 @@
 .nb-seq{display:block;width:100%;height:auto;margin-top:6px}
 .nb-seq circle.st{fill:var(--nb-s3)}
 .nb-seq circle.st.on{fill:color-mix(in srgb,var(--a) 55%,var(--nb-s3))}
-.nb-seq circle.st.now{fill:var(--a);filter:drop-shadow(0 0 6px var(--a))}
+.nb-seq circle.st.now{fill:var(--nb-t2)}
+.nb-seq circle.st.on.now{fill:var(--a);filter:drop-shadow(0 0 6px var(--a))}
+.nb-seq .shape{fill:color-mix(in srgb,var(--a) 12%,transparent);stroke:color-mix(in srgb,var(--a) 45%,transparent);stroke-width:1.5;stroke-linejoin:round}
 /* synth */
 .nb-scope{height:64px;border-radius:12px;background:var(--nb-inset);margin:12px 0 10px;overflow:hidden}
 .nb-scope svg{width:100%;height:100%}
