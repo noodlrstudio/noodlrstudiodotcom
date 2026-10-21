@@ -29,9 +29,8 @@
   }
 
   .wordmark {
-    font-size: 1.35rem;
-    font-weight: 680;
-    letter-spacing: -0.055em;
+    font: 800 1.2rem/1 var(--display, inherit);
+    letter-spacing: -0.04em;
   }
 
   .dot {
