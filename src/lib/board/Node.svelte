@@ -62,11 +62,13 @@
   const chordNames = ['C', 'Am7', 'F', 'G', 'Em', 'Dm', 'Fmaj7', 'Am'];
   let chord = 'Am7';
 
-  const seqOn = [0, 3, 5, 7, 8, 10, 13, 14];
+  // Same Euclidean rhythm (9 hits over 16 steps) the live Endless Sequencer starts with
+  const seqOn = Array.from({ length: 16 }, (_, i) => i).filter((i) => (i * 9) % 16 < 9);
   const ring = Array.from({ length: 16 }, (_, i) => ({
     cx: 80 + 60 * Math.sin((i / 16) * Math.PI * 2),
     cy: 80 - 60 * Math.cos((i / 16) * Math.PI * 2)
   }));
+  const seqShape = seqOn.map((i) => `${ring[i].cx},${ring[i].cy}`).join(' ');
 
   /** @type {[string, string, number[]][]} */
   const drums = [
@@ -119,9 +121,10 @@
     <div class="nb-hd"><span class="nb-ico">{@html icon('list')}</span><em>ENDLESS SEQUENCER</em></div>
     <svg class="nb-seq" viewBox="0 0 160 160" aria-hidden="true">
       <circle cx="80" cy="80" r="40" fill="none" stroke="#2a2a30" stroke-width="1.5" stroke-dasharray="3 5" />
+      <polygon class="shape" points={seqShape} />
       {#each ring as dot, i}<circle class="st" class:on={seqOn.includes(i)} class:now={$step % 16 === i} cx={dot.cx} cy={dot.cy} r="7" />{/each}
-      <text x="80" y="77" text-anchor="middle" fill="#f1f2f4" font-size="15" font-weight="650" font-family="SF Pro Display,Avenir Next,sans-serif">D minor</text>
-      <text x="80" y="94" text-anchor="middle" fill="#93969e" font-size="9" font-family="IBM Plex Mono,monospace">16 steps · 112</text>
+      <text x="80" y="78" text-anchor="middle" fill="#f1f2f4" font-size="16" font-weight="650" font-family="SF Pro Display,Avenir Next,sans-serif">E4</text>
+      <text x="80" y="94" text-anchor="middle" fill="#93969e" font-size="8" font-family="IBM Plex Mono,monospace">9/16 · 1/16 · forward</text>
     </svg>
   {:else if type === 'synth'}
     <div class="nb-hd"><span class="nb-ico">{@html icon('wave')}</span><em>POLYSYNTH</em></div>
