@@ -34,8 +34,8 @@
     <p><strong>Noodlr</strong> exists to build a better space for what happens around the ‘serious music production’ phase.</p>
 
     <div class="rooms">
-      <div class="play"><span>Before the DAW</span><b>Play</b>A place to capture fragments, connect ideas, experiment with sound and collaborate without getting buried in setup.</div>
-      <div class="plan"><span>After the DAW</span><b>Plan</b>A place to organise releases, performances, artwork, collaborators and everything involved in getting music out into the world.</div>
+      <div class="play"><span>Before the DAW</span><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg>Play</b>A place to capture fragments, connect ideas, experiment with sound and collaborate without getting buried in setup.</div>
+      <div class="plan"><span>After the DAW</span><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /></svg>Plan</b>A place to organise releases, performances, artwork, collaborators and everything involved in getting music out into the world.</div>
     </div>
 
     <p>We love DAWs. We are the kind of music nerds who lose an afternoon to automation and MIDI routing. But DAWs can’t do everything.</p>
@@ -73,7 +73,8 @@
   .rooms { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 28px 0; }
   .rooms div { border-radius: 20px; padding: 18px; font-size: .98rem; line-height: 1.45; }
   .rooms span { display: block; font: 600 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
-  .rooms b { display: block; font: 800 2rem/1 var(--display); letter-spacing: -.04em; margin: 8px 0 10px; }
+  .rooms b { display: flex; align-items: center; gap: 10px; font: 800 2rem/1 var(--display); letter-spacing: -.04em; margin: 8px 0 10px; }
+  .rooms svg { width: 28px; height: 28px; flex: none; }
   .play { background: var(--mint); transform: rotate(-1deg); }
   .plan { background: var(--ink); color: var(--cream); transform: rotate(.8deg); }
   .plan b { color: var(--coral); }
