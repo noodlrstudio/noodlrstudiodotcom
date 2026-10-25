@@ -14,7 +14,7 @@
 
   const beliefs = [
     ['Unfinished ideas', 'have value.'],
-    ['Collaboration should feel like playing together,', 'not managing files.'],
+    ['Collaboration should feel like playful interaction,', 'not managing files.'],
     ['Serious music', 'can come from playful tools.'],
     ['Creative technology should invite more people in,', 'not remind them what they don’t know.']
   ];
@@ -27,11 +27,11 @@
     <form method="dialog"><button class="close" aria-label="Close the manifesto">×</button></form>
 
     <span class="k">The noodlr manifesto</span>
-    <h2 id="manifesto-title">Music does not begin with a blank timeline.</h2>
-    <p class="lead">It begins with a hum, a tap on a table, a randomly named voice note, a radio snippet, or someone saying, “Hang on, play that again…”</p>
+    <h2 id="manifesto-title">Musical ideas don’t spring into existence arranged over a linear timeline.</h2>
+    <p class="lead">They begin with a hum, a tap on the table, a randomly named voice note, a radio snippet, a sample, or someone saying ‘hang on play that riff again…’</p>
 
-    <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. But most creative software wants us to organise, produce and finish before the idea has even had a chance to breathe.</p>
-    <p><strong>Noodlr</strong> exists to build a better space for what happens around music production.</p>
+    <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. It can be chaotic and liberating. But most DAWs overlook that early ideation phase, and overlook music creators who love spending time in that messy chaotic stage of music making. Instead DAWs try to rapidly funnel ideas through a rigid process of arrangement and production, before the idea has even had a chance to breathe, to explore, to develop.</p>
+    <p><strong>Noodlr</strong> exists to build a better space for what happens around the ‘serious music production’ phase.</p>
 
     <div class="rooms">
       <div class="play"><span>Before the DAW</span><b>Play</b>A place to capture fragments, connect ideas, experiment with sound and collaborate without getting buried in setup.</div>
@@ -46,7 +46,7 @@
       {#each beliefs as [head, tail]}<li><span>We believe</span><strong>{head}</strong> {tail}</li>{/each}
     </ul>
 
-    <p>Noodlr is a creative board for musicians: a home for musical fragments, shared experiments and the glorious mess that surrounds making something real.</p>
+    <p>noodlr is a creative board for musicians: a home for musical fragments, shared experiments and the glorious mess that surrounds making something real.</p>
     <ul class="places">
       {#each places as place}<li>{place}</li>{/each}
       <li>A place for ideas to become songs, shows, records, or something nobody has named yet.</li>

@@ -196,7 +196,7 @@
         <h2 class="wide">Songs, shows, records, or something nobody has named yet.</h2>
         <div class="manifesto">
           <p>Unfinished ideas have value.<small>We believe</small></p>
-          <p>Collaboration should feel like playing together, not managing files.<small>We believe</small></p>
+          <p>Collaboration should feel like playful interaction, not managing files.<small>We believe</small></p>
           <p>Serious music can come from playful tools.<small>We believe</small></p>
           <p>Creative tech should invite more people in.<small>We believe</small></p>
         </div>
