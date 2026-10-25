@@ -27,7 +27,7 @@
     <form method="dialog"><button class="close" aria-label="Close the manifesto">×</button></form>
 
     <span class="k">The noodlr manifesto</span>
-    <h2 id="manifesto-title">Musical ideas don’t spring into existence arranged over a linear timeline.</h2>
+    <h2 id="manifesto-title">Musical ideas don’t spring into existence arranged on a timeline.</h2>
     <p class="lead">They begin with a hum, a tap on the table, a randomly named voice note, a radio snippet, a sample, or someone saying ‘hang on play that riff again…’</p>
 
     <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. It can be chaotic and liberating. But most DAWs overlook that early ideation phase, and overlook music creators who love spending time in that messy chaotic stage of music making. Instead DAWs try to rapidly funnel ideas through a rigid process of arrangement and production, before the idea has even had a chance to breathe.</p>
@@ -38,7 +38,7 @@
       <div class="plan"><span>After the DAW</span><b>Plan</b>A place to organise releases, performances, artwork, collaborators and everything involved in getting music out into the world.</div>
     </div>
 
-    <p>We love DAWs. We are the kind of music nerds who lose an afternoon to automation and MIDI routing. But the DAW can’t do everything.</p>
+    <p>We love DAWs. We are the kind of music nerds who lose an afternoon to automation and MIDI routing. But DAWs can’t do everything.</p>
     <p>Music-making is not always linear. Ideas branch, collide, disappear, return and become something unexpected. Creative tools should support that. They should feel visual, flexible, joyful and a little bit toy-like.</p>
     <p>They should also be open and understandable by default: welcoming to experienced musicians, useful in education, and approachable for people still finding their way into music.</p>
 
@@ -52,7 +52,7 @@
       <li>A place for ideas to become songs, shows, records, or something nobody has named yet.</li>
     </ul>
 
-    <p class="close-line">Music starts in the spaces outside the DAW. <em>Let’s make more space for it.</em></p>
+    <p class="close-line">Music can thrive in the spaces outside the DAW. <em>Let’s make more space for it.</em></p>
   </article>
 </dialog>
 
