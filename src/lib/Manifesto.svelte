@@ -30,7 +30,7 @@
     <h2 id="manifesto-title">Musical ideas don’t spring into existence arranged over a linear timeline.</h2>
     <p class="lead">They begin with a hum, a tap on the table, a randomly named voice note, a radio snippet, a sample, or someone saying ‘hang on play that riff again…’</p>
 
-    <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. It can be chaotic and liberating. But most DAWs overlook that early ideation phase, and overlook music creators who love spending time in that messy chaotic stage of music making. Instead DAWs try to rapidly funnel ideas through a rigid process of arrangement and production, before the idea has even had a chance to breathe, to explore, to develop.</p>
+    <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. It can be chaotic and liberating. But most DAWs overlook that early ideation phase, and overlook music creators who love spending time in that messy chaotic stage of music making. Instead DAWs try to rapidly funnel ideas through a rigid process of arrangement and production, before the idea has even had a chance to breathe.</p>
     <p><strong>Noodlr</strong> exists to build a better space for what happens around the ‘serious music production’ phase.</p>
 
     <div class="rooms">
