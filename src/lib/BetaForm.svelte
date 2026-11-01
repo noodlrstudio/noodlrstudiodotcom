@@ -1,76 +1,43 @@
 <script>
   import { onMount } from 'svelte';
 
-  export let formId = 'xrpewozr';
+  const scriptUrl = 'https://eocampaign1.com/form/8a288f50-d60d-11f1-ba1c-2be2e501fef4.js';
+  const formId = '8a288f50-d60d-11f1-ba1c-2be2e501fef4';
 
-  /** @type {HTMLFormElement} */
-  let form;
-  let sent = false;
+  /** @type {HTMLDivElement} */
+  let mount;
 
-  // The form posts to Formspree as plain HTML. When JS is available,
-  // @formspree/ajax takes over so people stay on the page.
   onMount(() => {
-    /** @type {{ destroy: () => void } | undefined} */
-    let handle;
-    let gone = false;
-    import('@formspree/ajax').then(({ initForm }) => {
-      if (gone) return;
-      handle = initForm({
-        formElement: form,
-        formId,
-        useDefaultStyles: false,
-        onSuccess: () => (sent = true)
-      });
-    });
-    return () => {
-      gone = true;
-      handle?.destroy();
-    };
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = scriptUrl;
+    script.dataset.form = formId;
+    mount.appendChild(script);
+
+    return () => script.remove();
   });
 </script>
 
-<form bind:this={form} action="https://formspree.io/f/{formId}" method="POST" class:sent>
-  <input type="hidden" name="_subject" value="New Noodlr beta signup" />
-  <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
-
-  <div class="fields">
-    <label for="beta-name">Name
-      <input id="beta-name" name="name" autocomplete="name" required placeholder="Your name" data-fs-field />
-      <span class="err" data-fs-error="name"></span>
-    </label>
-    <label for="beta-email">Email
-      <input id="beta-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" data-fs-field />
-      <span class="err" data-fs-error="email"></span>
-    </label>
-    <label for="beta-role">I'm mostly a…
-      <select id="beta-role" name="role" data-fs-field>
-        <option>Musician or band</option>
-        <option>Producer</option>
-        <option>Educator</option>
-        <option>Plugin developer</option>
-        <option>Just curious</option>
-      </select>
-    </label>
-    <button type="submit" data-fs-submit-btn>Count me in</button>
-  </div>
-
-  <div class="msg err-box" data-fs-error role="alert">That didn't go through. Check your details and try again.</div>
-  <div class="msg ok" data-fs-success role="status">You're on the list. We'll email you when your invite is ready.</div>
-</form>
+<div class="email-octopus-shell" bind:this={mount} aria-label="Early access signup"></div>
 
 <style>
-  form { display: grid; gap: 10px; }
-  .fields { display: grid; gap: 10px; }
-  form.sent .fields { display: none; }
-  label { display: grid; gap: 6px; font: 600 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--soft); }
-  input, select { font: 500 16px/1.2 var(--body); color: var(--ink); background: #f6efe1; border: 2px solid var(--ink); border-radius: 14px; padding: 12px 14px; }
-  form :global(input[aria-invalid='true']) { border-color: #c2412b; }
-  button { height: 48px; border-radius: 24px; border: 2px solid var(--ink); background: var(--ink); color: var(--cream); font: 600 15px/1 var(--body); cursor: pointer; }
-  button:disabled { opacity: .6; cursor: progress; }
-  .err { font: 500 13px/1.3 var(--body); text-transform: none; letter-spacing: 0; color: #c2412b; }
-  .msg { padding: 14px; border-radius: 14px; font-weight: 600; }
-  .err-box { background: #ffd9cf; color: #6b1d0f; }
-  .ok { background: var(--mint); color: var(--ink); }
-  [data-fs-error]:not([data-fs-active]), [data-fs-success]:not([data-fs-active]) { display: none; }
-  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .email-octopus-shell { min-height: 140px; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"].inline-container) { max-width: none !important; width: 100%; background: transparent !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .nurture-container) { display: block !important; background: transparent !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .nurture-container > .align-mid:first-child),
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .nurture-container > .align-mid:first-child > .p-3) { padding: 0 !important; background: transparent !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .nurture-container > .align-mid:nth-child(2)) { display: none !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] [eo-block="title"]),
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] [eo-block="text"]),
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] [eo-block="social-follow"]),
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] [eo-block="powered-by"]) { display: none !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .emailoctopus-form-wrapper) { margin: 0 !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] form) { display: grid; gap: 10px; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .emailoctopus-form-row) { margin: 0 !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] input:not([type="submit"])) { width: 100%; box-sizing: border-box; font: 500 16px/1.2 var(--body) !important; color: var(--ink) !important; background: #f6efe1 !important; border: 2px solid var(--ink) !important; border-radius: 14px !important; padding: 12px 14px !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] input:not([type="submit"]):focus) { outline: 3px solid color-mix(in srgb, var(--mint) 55%, transparent); outline-offset: 2px; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] input[type="submit"]) { height: 48px !important; border-radius: 24px !important; border: 2px solid var(--ink) !important; background: var(--ink) !important; color: var(--cream) !important; font: 600 15px/1 var(--body) !important; cursor: pointer; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] input[type="submit"]:hover) { background: var(--green) !important; border-color: var(--green) !important; }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .emailoctopus-success-message) { padding: 14px; border-radius: 14px; background: var(--mint); color: var(--ink); font: 600 15px/1.3 var(--body); }
+  :global([data-form="8a288f50-d60d-11f1-ba1c-2be2e501fef4"] .emailoctopus-error-message) { margin: 0; color: #c2412b; font: 500 13px/1.3 var(--body); }
 </style>

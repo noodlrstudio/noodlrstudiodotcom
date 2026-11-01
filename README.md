@@ -17,14 +17,9 @@ npm run dev
 
 The Svelte config automatically adds the repository-name base path for project pages. Repositories named `username.github.io` use `/`.
 
-## Beta signup form
+## Early access signup form
 
-`src/lib/BetaForm.svelte` posts to Formspree (form `xrpewozr`). It works in two layers:
-
-- **Without JavaScript** the form is a plain HTML `POST` to `https://formspree.io/f/xrpewozr`, so signups still arrive.
-- **With JavaScript** `@formspree/ajax` takes over in `onMount`: it submits in the background, disables the button while sending, shows field errors next to the inputs, and swaps the fields for a success message.
-
-The form sends `name`, `email` and `role`, plus Formspree's `_subject` (email subject line) and `_gotcha` (honeypot spam trap). Manage submissions, notification emails and spam settings in the Formspree dashboard. Add a privacy-policy link before collecting a larger mailing list.
+`src/lib/BetaForm.svelte` renders the Noodlr-styled early-access form and submits to EmailOctopus form `8a288f50-d60d-11f1-ba1c-2be2e501fef4`. Manage subscribers, confirmation emails and spam settings in the EmailOctopus dashboard. Add a privacy-policy link before collecting a larger mailing list.
 
 ## Board previews
 

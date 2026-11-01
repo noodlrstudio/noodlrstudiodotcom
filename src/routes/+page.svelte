@@ -25,7 +25,7 @@
 
 <svelte:head>
   <title>Noodlr Studio · A musical space to Play &amp; Plan</title>
-  <meta name="description" content="Noodlr is a creative board for musicians: play before production, plan what comes next, and bring your web plugins along. Join the beta." />
+  <meta name="description" content="Noodlr is a creative board for musicians: play before production, plan what comes next, and bring your web plugins along. Join the early access list." />
   <meta property="og:title" content="Noodlr · A musical space to Play &amp; Plan" />
   <meta property="og:description" content="A board for everything around the DAW. Play before. Plan after. Make more music together." />
 </svelte:head>
@@ -51,7 +51,7 @@
         <p>Before production there's play: hums, loops, jams. After it there's planning: the release, the artwork, the gig. Noodlr gives both a proper home.</p>
         <div class="ctas">
           <a class="btn mint" href={play} target="_blank" rel="noopener">Just Play <span aria-hidden="true">↗</span></a>
-          <a class="btn coral" href="#join">Sign up for beta access</a>
+          <a class="btn coral" href="#join">Sign up for early access</a>
           <a class="btn line" href={testflight} target="_blank" rel="noopener">iOS &amp; Mac TestFlight</a>
         </div>
       </div>
@@ -225,11 +225,11 @@
 
   <section class="join wrap" id="join">
     <div class="inner">
-      <span class="k">Private beta</span>
+      <span class="k">Early access</span>
       <h2>Let's make more space for music.</h2>
       <div class="join-grid">
         <div class="card">
-          <h3>Sign up for beta access</h3>
+          <h3>Sign up for early access</h3>
           <p>We're inviting musicians, educators and plugin developers in waves. Low volume, no spam.</p>
           <BetaForm />
         </div>
