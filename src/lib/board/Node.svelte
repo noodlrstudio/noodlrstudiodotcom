@@ -36,6 +36,7 @@
     webapp: { a: '#9aa0aa', w: 300, name: 'Web App', ports: [['l', 'midi', 'in', 40], ['r', 'midi', 'out', 40]] },
     wam: { a: '#00d19b', w: 220, name: 'WAM Gain', ports: [['l', 'audio', 'in', 40], ['l', 'midi', 'min', 66], ['r', 'audio', 'out', 50]] },
     cmajor: { a: '#5fd8ff', w: 220, name: 'CMajor Sine', ports: [['l', 'midi', 'in', 50], ['r', 'audio', 'out', 50]] },
+    wclap: { a: '#c3a6ff', w: 220, name: 'Synth', ports: [['l', 'midi', 'in', 50], ['r', 'audio', 'out', 50]] },
     radio: { a: '#ffbd5d', w: 270, name: 'Radio Sampler', ports: [['r', 'audio', 'out', 50]] },
     whistler: { a: '#00d19b', w: 240, name: 'Whistler', ports: [['r', 'midi', 'mout', 36], ['r', 'audio', 'out', 70]] },
     looper: { a: '#52e2b8', w: 280, name: 'Looper', ports: [['l', 'audio', 'in1', 30], ['l', 'audio', 'in2', 45], ['l', 'audio', 'in3', 60], ['l', 'audio', 'in4', 75], ['r', 'audio', 'out', 50]] },
@@ -169,6 +170,13 @@
       <svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 16 -2, 34 -2, 50 30 S 84 62, 100 30 S 134 -2, 150 30 S 184 62, 200 30" fill="none" stroke="#5fd8ff" stroke-width="2" /></svg>
     </div>
     <div class="nb-row"><div class="nb-name" style="margin:0">CMajor Sine</div><span class="nb-mono">A3 · 220 Hz</span></div>
+  {:else if type === 'wclap'}
+    <div class="nb-hd"><span class="nb-ico">{@html icon('keys')}</span><em>WCLAP · CURATED</em></div>
+    <div class="nb-keys">
+      {#each [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as k}<i class:on={[0, 2, 4].includes(k)}></i>{/each}
+      {#each [1, 2, 4, 5, 6, 8, 9] as k}<b style="left:{k * 10}%"></b>{/each}
+    </div>
+    <div class="nb-row"><div class="nb-name" style="margin:0">Synth</div><span class="nb-mono">Warm Pad</span></div>
   {:else if type === 'radio'}
     <div class="nb-hd"><span class="nb-ico">{@html icon('radio')}</span><em>RADIO SAMPLER</em></div>
     <div class="nb-name">Late-night jazz · live</div>

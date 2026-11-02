@@ -17,6 +17,7 @@ const paths = {
   play: '<polygon points="6 3 20 12 6 21 6 3" fill="currentColor"/>',
   drum: '<path d="m2 2 8 8"/><path d="m22 2-8 8"/><ellipse cx="12" cy="9" rx="10" ry="5"/><path d="M7 13.4v7.9"/><path d="M12 14v8"/><path d="M17 13.4v7.9"/><path d="M2 9v8a10 5 0 0 0 20 0V9"/>',
   harp: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  keys: '<path d="M12 4v12"/><path d="M8 4v12"/><path d="M16 4v12"/><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 20v-4"/><path d="M18 20v-4"/>',
   pad: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="15" cy="9" r="2"/>'
 };
 

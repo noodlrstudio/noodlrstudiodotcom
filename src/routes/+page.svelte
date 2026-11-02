@@ -144,6 +144,7 @@
         <div class="aux">
           <div><div class="aux-stage"><Node type="wam" id="aux-wam" standalone /></div><h3>WAM 2</h3><p>Web Audio Modules route audio through the board.</p></div>
           <div><div class="aux-stage"><Node type="cmajor" id="aux-cmajor" standalone /></div><h3>Cmajor</h3><p>Cmajor WebAudio instruments and effects, cabled like any node.</p></div>
+          <div><div class="aux-stage"><Node type="wclap" id="aux-wclap" standalone /></div><h3>WCLAP</h3><p>CLAP plugins compiled to WebAssembly. Our Synth, Reverb and Chorus run this way.</p></div>
           <div><div class="aux-stage"><Node type="webapp" id="aux-web" w={260} url="808-in-a-browser.app" standalone /></div><h3>Any web app</h3><p>The humble iframe plus <code>@noodlr/plugin-sdk</code>: board MIDI in and out, with its state saved.</p></div>
         </div>
       </section>
@@ -328,13 +329,13 @@
   .pills b { color: var(--green); }
   .inputs { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; margin-top: 40px; }
   .stack { display: grid; gap: 18px; min-width: 0; }
-  .aux { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 36px; }
+  .aux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 36px; }
   .aux > div { border-radius: 22px; background: var(--ink); color: var(--cream); padding: 22px; display: flex; flex-direction: column; gap: 14px; }
   .aux-stage { min-height: 250px; display: grid; place-items: center; }
   .aux h3 { margin: 0; font: 800 1.3rem/1 var(--display); letter-spacing: -.03em; }
   .aux p { margin: 0; color: #c9bfa9; font-size: 15px; }
   .aux code { font: 500 .9em var(--mono); color: var(--mint); }
-  @media (max-width: 960px) { .aux { grid-template-columns: 1fr; } }
+  @media (max-width: 720px) { .aux { grid-template-columns: 1fr; } }
   #daw { background: repeating-linear-gradient(90deg, transparent 0 79px, rgba(27, 26, 23, .07) 79px 80px); }
   .tag { position: absolute; font: 600 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #93969e; }
   .daw-node { background: #d9d6cf !important; color: #3a3a3a !important; border: 0 !important; padding: 14px !important; }

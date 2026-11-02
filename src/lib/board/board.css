@@ -86,6 +86,11 @@
 .nb-bigknob{width:84px;height:84px;margin:14px auto 6px;border-radius:50%;background:conic-gradient(from 225deg,var(--a) 0 var(--v),var(--nb-s3) var(--v) 270deg,transparent 270deg);display:grid;place-items:center}
 .nb-bigknob:after{content:"";width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#34343c,#1c1c21)}
 .nb-center{text-align:center}
+/* wclap */
+.nb-keys{position:relative;height:70px;margin:12px 0 10px;border-radius:10px;background:var(--nb-inset);padding:6px;display:flex;gap:3px;overflow:hidden}
+.nb-keys i{flex:1;border-radius:0 0 4px 4px;background:#d9d6ce}
+.nb-keys i.on{background:var(--a);box-shadow:0 0 12px color-mix(in srgb,var(--a) 60%,transparent)}
+.nb-keys b{position:absolute;top:6px;height:56%;width:6%;margin-left:3%;transform:translateX(-50%);border-radius:0 0 3px 3px;background:#1c1c21}
 /* radio */
 .nb-dial{height:34px;margin:12px 0 8px;border-radius:10px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 1px,transparent 1px 9px),var(--nb-inset);position:relative}
 .nb-dial i{position:absolute;top:4px;bottom:4px;left:62%;width:2px;background:var(--a);box-shadow:0 0 10px var(--a)}
