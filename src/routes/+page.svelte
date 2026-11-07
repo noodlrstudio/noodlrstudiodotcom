@@ -247,7 +247,7 @@
 <footer class="wrap">
   <div class="inner">
     <span>© 2026 Noodlr Studio Ltd · Built with love in Bristol</span>
-    <span class="links"><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:noodlr.music@gmail.com">Get in touch</a></span>
+    <span class="links"><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:info@noodlr.studio">Get in touch</a></span>
   </div>
 </footer>
 
