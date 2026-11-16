@@ -11,7 +11,7 @@
 </script>
 
 <div class="pr {theme}" class:keep class:compact>
-  <div class="pw-banner"><small>Plan · Noodlr EP</small><strong>{title}</strong></div>
+  <div class="pw-banner"><small>Plan · noodlr EP</small><strong>{title}</strong></div>
   <div class="pw" style="--span:4">
     <h4>Calendar <span>Nov</span></h4>
     <div class="pw-cal">

@@ -5,15 +5,15 @@
 </script>
 
 <svelte:head>
-  <title>Devlog · Noodlr Studio</title>
-  <meta name="description" content="Notes from building Noodlr Board, with measurements, diagrams and the trade-offs behind the work." />
+  <title>Devlog · noodlr Studio</title>
+  <meta name="description" content="Notes from building noodlr Board, with measurements, diagrams and the trade-offs behind the work." />
   <link rel="canonical" href="https://noodlr.studio/blog/" />
 </svelte:head>
 
 <main class="log-wrap log-index">
-  <p class="kicker">Noodlr Board</p>
+  <p class="kicker">noodlr Board</p>
   <h1>Devlog</h1>
-  <p class="intro">Notes from building Noodlr Board. What changed, what we measured, and what we’re trying next.</p>
+  <p class="intro">Notes from building noodlr Board. What changed, what we measured, and what we’re trying next.</p>
   <div class="featured"><PatchFigure /></div>
   <section aria-label="Devlog posts">
     {#each posts as post (post.slug)}

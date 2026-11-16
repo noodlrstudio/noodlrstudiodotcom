@@ -4,7 +4,7 @@
   export let compact = false;
 </script>
 
-<a href={`${base}/`} class:compact aria-label="Noodlr Studio home">
+<a href={`${base}/`} class:compact aria-label="noodlr Studio home">
   <img src={`${base}/noodlr-icon.svg`} alt="" />
 
   <span class="wordmark">

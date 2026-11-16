@@ -25,9 +25,9 @@
 </script>
 
 <svelte:head>
-  <title>Noodlr Studio · A musical space to Play &amp; Plan</title>
-  <meta name="description" content="Noodlr is a creative board for musicians: play before production, plan what comes next, and bring your web plugins along. Join the early access list." />
-  <meta property="og:title" content="Noodlr · A musical space to Play &amp; Plan" />
+  <title>noodlr Studio · A musical space to Play &amp; Plan</title>
+  <meta name="description" content="noodlr is a creative board for musicians: play before production, plan what comes next, and bring your web plugins along. Join the early access list." />
+  <meta property="og:title" content="noodlr · A musical space to Play &amp; Plan" />
   <meta property="og:description" content="A board for everything around the DAW. Play before. Plan after. Make more music together." />
 </svelte:head>
 
@@ -49,7 +49,7 @@
       <span class="k slug"><b>noodlr studio</b> your space to play + plan music.</span>
       <h1>A musical space to <span class="w-play">Play</span> &amp; <span class="w-plan">Plan</span></h1>
       <div class="hero-row">
-        <p>Before production there's play: hums, loops, jams. After it there's planning: the release, the artwork, the gig. Noodlr gives both a proper home.</p>
+        <p>Before production there's play: hums, loops, jams. After it there's planning: the release, the artwork, the gig. noodlr gives both a proper home.</p>
         <div class="ctas">
           <a class="btn mint" href={play} target="_blank" rel="noopener">Just Play <span aria-hidden="true">↗</span></a>
           <a class="btn coral" href="#join">Sign up for early access</a>
@@ -140,7 +140,7 @@
         <span class="jack">{@html midiIcon}</span>
         <div class="stage-h">
           <div><span class="k">Aux in · open plugins</span><h2>Every web plugin can join the jam.</h2></div>
-          <p class="lede">Noodlr is open by default. Web Audio plugins and web apps patch into the same board as ours, with the same cables.</p>
+          <p class="lede">noodlr is open by default. Web Audio plugins and web apps patch into the same board as ours, with the same cables.</p>
         </div>
         <div class="aux">
           <div><div class="aux-stage"><Node type="wam" id="aux-wam" standalone /></div><h3>WAM 2</h3><p>Web Audio Modules route audio through the board.</p></div>
@@ -154,7 +154,7 @@
         <span class="jack">{@html audioIcon}</span>
         <div class="stage-h">
           <div><span class="k">Your DAW</span><h2>Timelines are brilliant. They're just not the only way.</h2></div>
-          <p class="lede">We love DAWs, and we'll happily lose an afternoon to automation lanes. Noodlr boards will get mini timelines of their own too. But music also happens in loops, sketches, conversations and plans, so Noodlr makes space for those, either side of your DAW.</p>
+          <p class="lede">We love DAWs, and we'll happily lose an afternoon to automation lanes. noodlr boards will get mini timelines of their own too. But music also happens in loops, sketches, conversations and plans, so noodlr makes space for those, either side of your DAW.</p>
         </div>
         <div class="boxed">
           <Board width={1480} height={560} minScale={0.5} focus={0} label="Play to DAW to Plan" cables={['flow-tape.out>flow-daw.in', 'flow-bass.out>flow-daw.in', 'flow-kal.out>flow-daw.in', 'flow-daw.out>flow-plan.in']}>
@@ -247,7 +247,7 @@
 
 <footer class="wrap">
   <div class="inner">
-    <span>© 2026 Noodlr Studio Ltd · Built with love in Bristol</span>
+    <span>© 2026 noodlr Studio Ltd · Built with love in Bristol</span>
     <span class="links"><a href={`${base}/blog/`}>Devlog</a><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:info@noodlr.studio">Get in touch</a></span>
   </div>
 </footer>

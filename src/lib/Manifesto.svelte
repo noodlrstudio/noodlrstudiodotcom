@@ -31,7 +31,7 @@
     <p class="lead">They begin with a hum, a tap on the table, a randomly named voice note, a radio snippet, a sample, or someone saying ‘hang on play that riff again…’</p>
 
     <p><strong>That early stage of music-making matters.</strong> It is playful, messy, social and full of possibility. It can be chaotic and liberating. But most DAWs overlook that early ideation phase, and overlook music creators who love spending time in that messy chaotic stage of music making. Instead DAWs try to rapidly funnel ideas through a rigid process of arrangement and production, before the idea has even had a chance to breathe.</p>
-    <p><strong>Noodlr</strong> exists to build a better space for what happens around the ‘serious music production’ phase.</p>
+    <p><strong>noodlr</strong> exists to build a better space for what happens around the ‘serious music production’ phase.</p>
 
     <div class="rooms">
       <div class="play"><span>Before the DAW</span><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg>Play</b>A place to capture fragments, connect ideas, experiment with sound and collaborate without getting buried in setup.</div>

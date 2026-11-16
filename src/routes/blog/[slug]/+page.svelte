@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>{post.title} · Noodlr Devlog</title>
+  <title>{post.title} · noodlr Devlog</title>
   <meta name="description" content={post.summary} />
   <meta property="og:title" content={post.title} />
   <meta property="og:description" content={post.summary} />

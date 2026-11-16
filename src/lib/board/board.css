@@ -1,4 +1,4 @@
-/* Noodlr board kit. Values mirror the board app (PluginWindow.css, canvas-theme.ts, appearance.ts). */
+/* noodlr board kit. Values mirror the board app (PluginWindow.css, canvas-theme.ts, appearance.ts). */
 :root{--nb-canvas:#0c0c0f;--nb-s1:#151518;--nb-s2:#222229;--nb-s3:#2a2a30;--nb-inset:#101013;--nb-t1:#f1f2f4;--nb-t2:#b9bbc2;--nb-t3:#93969e;--nb-border:rgba(255,255,255,.08);--nb-border-strong:#6b6f7a;--nb-accent:#00d19b;--nb-sel:#f4c64b;--nb-audio:#ff8652;--nb-midi:#6a6f7d;--nb-sans:"SF Pro Display","Avenir Next","Segoe UI",system-ui,sans-serif;--nb-mono:"SF Mono","IBM Plex Mono",Menlo,monospace}
 .nb-board{position:relative;background-color:var(--nb-canvas);background-image:radial-gradient(circle,rgba(255,255,255,.17) 1.25px,transparent 1.6px),radial-gradient(circle,rgba(255,255,255,.08) .8px,transparent 1.1px);background-size:160px 160px,40px 40px;overflow:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;user-select:none;-webkit-user-select:none}
 .nb-board::-webkit-scrollbar{display:none}

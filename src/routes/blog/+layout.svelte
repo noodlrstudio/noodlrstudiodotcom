@@ -8,11 +8,11 @@
 <div class="devlog">
   <header class="log-header log-wrap">
     <Logo />
-    <nav aria-label="Studio"><a href={`${base}/blog/`}>Devlog</a><a href="https://noodlr.xyz">Open Noodlr ↗</a></nav>
+    <nav aria-label="Studio"><a href={`${base}/blog/`}>Devlog</a><a href="https://noodlr.xyz">Open noodlr ↗</a></nav>
   </header>
   {@render children()}
   <footer class="log-footer log-wrap">
-    <a href={`${base}/`}>Noodlr Studio</a>
+    <a href={`${base}/`}>noodlr Studio</a>
     <a href={`${base}/blog/`}>Devlog</a>
   </footer>
 </div>
