@@ -159,7 +159,7 @@
     <div class="nb-hd"><span class="nb-ico">{@html icon('globe')}</span><em>WEB APP</em></div>
     <div class="nb-chrome">{@html icon('globe')}<span>{url}</span></div>
     <div class="nb-frame">{#each webPads as p}<i class={p}></i>{/each}</div>
-    <div style="margin-top:10px"><span class="nb-badge" style="--a:#00d19b">● Noodlr bridge · MIDI</span></div>
+    <div style="margin-top:10px"><span class="nb-badge" style="--a:#00d19b">● noodlr bridge · MIDI</span></div>
   {:else if type === 'wam'}
     <div class="nb-hd"><span class="nb-ico">{@html icon('sliders')}</span><em>WAM 2 · CURATED</em></div>
     <div class="nb-bigknob" style="--v:190deg"></div>

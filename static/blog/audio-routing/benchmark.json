@@ -1,0 +1,168 @@
+{
+  "baseline": "facbb6bb",
+  "rows": [
+    {
+      "count": 16,
+      "name": "baseline",
+      "round": 0,
+      "medianMs": 0.19999998807907104,
+      "connects": 16,
+      "disconnects": 16,
+      "automation": 48
+    },
+    {
+      "count": 16,
+      "name": "current",
+      "round": 0,
+      "medianMs": 0,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 16,
+      "name": "current",
+      "round": 1,
+      "medianMs": 0,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 16,
+      "name": "baseline",
+      "round": 1,
+      "medianMs": 0.10000002384185791,
+      "connects": 16,
+      "disconnects": 16,
+      "automation": 48
+    },
+    {
+      "count": 16,
+      "name": "baseline",
+      "round": 2,
+      "medianMs": 0.10000002384185791,
+      "connects": 16,
+      "disconnects": 16,
+      "automation": 48
+    },
+    {
+      "count": 16,
+      "name": "current",
+      "round": 2,
+      "medianMs": 0,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 64,
+      "name": "baseline",
+      "round": 0,
+      "medianMs": 0.5999999940395355,
+      "connects": 64,
+      "disconnects": 64,
+      "automation": 192
+    },
+    {
+      "count": 64,
+      "name": "current",
+      "round": 0,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 64,
+      "name": "current",
+      "round": 1,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 64,
+      "name": "baseline",
+      "round": 1,
+      "medianMs": 0.5999999940395355,
+      "connects": 64,
+      "disconnects": 64,
+      "automation": 192
+    },
+    {
+      "count": 64,
+      "name": "baseline",
+      "round": 2,
+      "medianMs": 0.5999999940395355,
+      "connects": 64,
+      "disconnects": 64,
+      "automation": 192
+    },
+    {
+      "count": 64,
+      "name": "current",
+      "round": 2,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 128,
+      "name": "baseline",
+      "round": 0,
+      "medianMs": 1.5,
+      "connects": 128,
+      "disconnects": 128,
+      "automation": 384
+    },
+    {
+      "count": 128,
+      "name": "current",
+      "round": 0,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 128,
+      "name": "current",
+      "round": 1,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    },
+    {
+      "count": 128,
+      "name": "baseline",
+      "round": 1,
+      "medianMs": 1.2999999821186066,
+      "connects": 128,
+      "disconnects": 128,
+      "automation": 384
+    },
+    {
+      "count": 128,
+      "name": "baseline",
+      "round": 2,
+      "medianMs": 1.2999999821186066,
+      "connects": 128,
+      "disconnects": 128,
+      "automation": 384
+    },
+    {
+      "count": 128,
+      "name": "current",
+      "round": 2,
+      "medianMs": 0.09999999403953552,
+      "connects": 1,
+      "disconnects": 1,
+      "automation": 0
+    }
+  ],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+}

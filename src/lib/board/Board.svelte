@@ -15,7 +15,7 @@
   export let focus = 0.5;
   /** Keep the container's own height instead of fitting it to the world. */
   export let fixedHeight = false;
-  export let label = 'Noodlr board';
+  export let label = 'noodlr board';
 
   const colours = { audio: '#ff8652', midi: '#6a6f7d' };
 

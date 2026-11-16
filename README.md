@@ -15,7 +15,11 @@ npm run dev
 2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
 3. Push a commit. The included workflow builds and deploys the site.
 
-The Svelte config automatically adds the repository-name base path for project pages. Repositories named `username.github.io` use `/`.
+The Pages workflow sets an empty `BASE_PATH` for the `noodlr.studio` custom domain. For a project Pages preview without that domain, set `BASE_PATH` to the repository path without a trailing slash.
+
+## Devlog
+
+The Devlog is served at `/blog/`. Add each entry to `src/lib/blog/posts.js` and add an article with the matching slug under `src/lib/blog/posts/`. List the newest entry first and date it for publication. Keep measurements with their test conditions, and link the evidence when it can be shared. The build prerenders every registered article.
 
 ## Early access signup form
 
