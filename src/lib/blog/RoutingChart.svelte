@@ -18,7 +18,7 @@
       </div>
     </div>
   {/each}
-  <figcaption>One route was changed in each graph. Calls count both connects and disconnects on playback output routes.</figcaption>
+  <figcaption>We changed one route in each graph and counted connects and disconnects on playback outputs.</figcaption>
 </figure>
 
 <style>

@@ -3,8 +3,8 @@ export const posts = [
     number: 1,
     slug: 'audio-routing-before-and-after',
     date: '2026-11-16',
-    title: 'What happens when you move one audio cable?',
-    summary: 'We traced a cable edit through Noodlr Board’s audio engine. In a 128-route test, the old router made 256 connection calls. The new one made two.',
+    title: 'How Noodlr reconnects one audio cable',
+    summary: 'In a 128-route test, changing one audio cable took 256 connection calls before the routing update and two after it.',
     topic: 'Audio engineering'
   }
 ];
