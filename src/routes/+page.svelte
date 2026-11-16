@@ -1,5 +1,6 @@
 <script>
   import '$lib/board/board.css';
+  import { base } from '$app/paths';
   import Logo from '$lib/Logo.svelte';
   import Board from '$lib/board/Board.svelte';
   import Node from '$lib/board/Node.svelte';
@@ -34,7 +35,7 @@
   <div class="inner">
     <Logo />
     <nav class="steps" aria-label="Sections">
-      <a href="#input">Input</a><a href="#play">Play</a><a href="#aux">Plugins</a><a href="#daw">DAW</a><a href="#plan">Plan</a><a href="#values">Values</a><a href="#adc">ADC</a>
+      <a href="#input">Input</a><a href="#play">Play</a><a href="#aux">Plugins</a><a href="#daw">DAW</a><a href="#plan">Plan</a><a href="#values">Values</a><a href="#adc">ADC</a><a href={`${base}/blog/`}>Devlog</a>
     </nav>
     <a class="btn mint" href={play} target="_blank" rel="noopener">Just Play</a>
     <a class="btn ink" href="#join">Beta access</a>
@@ -247,7 +248,7 @@
 <footer class="wrap">
   <div class="inner">
     <span>© 2026 Noodlr Studio Ltd · Built with love in Bristol</span>
-    <span class="links"><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:info@noodlr.studio">Get in touch</a></span>
+    <span class="links"><a href={`${base}/blog/`}>Devlog</a><button on:click={() => manifesto.open()}>Manifesto</button><a href="mailto:info@noodlr.studio">Get in touch</a></span>
   </div>
 </footer>
 
